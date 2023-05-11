@@ -1,23 +1,25 @@
 <template>
+    <img id="yinla_logo" src="/106425898.png" alt="YINLA_LOGO">
     <h1 class="team_name" style="moveUp">YINLA</h1>
     <div v-if="view === 1">
+        
         <button @click="changeView(2)">進入</button>
     </div>
 
     <div v-if="view === 2">
+        
         <button @click="changeView(3)">簡介</button>
         <button @click="changeView(4)">社群</button>
         <button @click="changeView(1)">返回</button>
     </div>
 
     <div v-if="view === 3">
-        <img id="yinla_logo" src="/106425898.png" alt="YINLA_LOGO">
-        <h3 class="info">創立於 2022年<br>創辦人 <a  href="https://www.instagram.com/_yincheng_/" target="_blank">YinCheng</a></h3>
+        <h3 class="info">創立於 2022年<br>創辦人 <a  href="https://github.com/YinCheng0106" target="_blank">YinCheng</a></h3>
         <button @click="changeView(2)">返回</button>
     </div>
 
     <div v-if="view === 4">
-        <p>點選以下按鈕帶你到我們的社群</p>
+        <br>
         <button onclick="location.href='https://discord.gg/mnCHdBbh65'">
             Discord
         </button>
@@ -54,6 +56,11 @@ watch(view.value, () => {
 #yinla_logo {
     border-radius: 45px;
     animation: openIn 1.5s ease-in-out;
+}
+
+h1 {
+    position: static;
+    font-size: 60px;
 }
 
 button, .info, h1 {
