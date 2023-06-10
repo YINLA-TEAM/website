@@ -27,8 +27,8 @@
             GitHub
         </button>
         <button>other</button>
-        <br />
-        <br />
+        <br/>
+        <br/>
         <button @click="changeView(2)">返回</button>
     </div>
 </template>
